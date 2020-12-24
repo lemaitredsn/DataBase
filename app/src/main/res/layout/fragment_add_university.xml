@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_margin="8dp"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/editTextUniversityName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:inputType="textPersonName"
+        android:hint="@string/name_university" />
+
+    <EditText
+        android:id="@+id/editTextUniversityAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginBottom="10dp"
+        android:inputType="textPersonName"
+        android:hint="Адрес" />
+
+    <EditText
+        android:id="@+id/editTextAvatar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginBottom="10dp"
+        android:inputType="textUri"
+        android:hint="Аватар" />
+
+    <Button
+        android:id="@+id/buttonAddUniversity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add" />
+</LinearLayout>

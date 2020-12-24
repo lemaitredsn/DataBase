@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/listUniversityFragment">
+
+    <fragment
+        android:id="@+id/listUniversityFragment"
+        android:name="ru.lemaitre.databasetest.presentation.list_university.ListUniversityFragment"
+        android:label="ListUniversityFragment"
+        tools:layout="@layout/fragment_list_university"
+        >
+        <action
+            android:id="@+id/action_listUniversityFragment_to_viewPagerScreensFragment"
+            app:destination="@id/viewPagerScreensFragment" />
+        <action
+            android:id="@+id/action_listUniversityFragment_to_addUniversityFragment"
+            app:destination="@id/addUniversityFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewPagerScreensFragment"
+        android:name="ru.lemaitre.databasetest.presentation.viewpager.HostingViewPagerFragment"
+        tools:layout="@layout/fragment_hosting_view_pager"
+        android:label="ViewPagerScreensFragment" >
+        <argument
+            android:name="id"
+            app:argType="long" />
+        <action
+            android:id="@+id/action_viewPagerScreensFragment_to_addKaphedraFragment"
+            app:destination="@id/addKaphedraFragment" />
+        <action
+            android:id="@+id/action_viewPagerScreensFragment_to_addInstituteFragment"
+            app:destination="@id/addInstituteFragment" />
+        <action
+            android:id="@+id/action_viewPagerScreensFragment_to_addStudentFragment"
+            app:destination="@id/addStudentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addUniversityFragment"
+        android:name="ru.lemaitre.databasetest.presentation.add.add_university.AddUniversityFragment"
+        android:label="AddUniversityFragment"
+        tools:layout="@layout/fragment_add_university"
+        >
+        <argument
+            android:name="id"
+            app:argType="long"
+            android:defaultValue="0L" />
+    </fragment>
+    <fragment
+        android:id="@+id/addKaphedraFragment"
+        android:name="ru.lemaitre.databasetest.presentation.add.add_kaphedra.AddKaphedraFragment"
+        tools:layout="@layout/fragment_add_kaphedra"
+        android:label="AddKaphedraFragment" >
+        <argument
+            android:name="id"
+            app:argType="long" />
+    </fragment>
+    <fragment
+        android:id="@+id/addInstituteFragment"
+        android:name="ru.lemaitre.databasetest.presentation.add.add_institute.AddInstituteFragment"
+        android:label="AddInstituteFragment"
+        tools:layout="@layout/fragment_add_institute"
+        >
+        <argument
+            android:name="id"
+            app:argType="long" />
+    </fragment>
+    <fragment
+        android:id="@+id/addStudentFragment"
+        android:name="ru.lemaitre.databasetest.presentation.add.add_student.AddStudentFragment"
+        android:label="AddStudentFragment"
+        tools:layout="@layout/fragment_add_student"
+        >
+        <argument
+            android:name="id"
+            app:argType="long" />
+    </fragment>
+</navigation>

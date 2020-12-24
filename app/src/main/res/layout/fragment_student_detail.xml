@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarStudentDetail"
+            style="@style/toolBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:elevation="8dp"
+            app:menu="@menu/toolbar_menu_add_grade_students"
+            app:title="@string/name_student" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/studentDesciplineTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text = "физика - 4"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

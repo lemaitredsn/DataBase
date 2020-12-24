@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <item
+        android:id="@+id/add_kaphedra"
+        android:title="@string/add_kaphedra"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/add_institute"
+        android:title="@string/add_institute"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/add_student"
+        android:title="@string/add_student"
+        app:showAsAction="never"
+        />
+</menu>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">DataBase</string>
+    <string name="universities">Университеты</string>
+    <string name="search">поиск</string>
+    <string name="new_university">новый университет</string>
+    <string name="add_university">добавить университет</string>
+    <string name="add_kaphedra">добавить кафедру</string>
+    <string name="add_institute">добавить институт</string>
+    <string name="add_student">добавить студента</string>
+    <string name="name_university">Название университета</string>
+    <string name="add">добавить</string>
+    <string name="adress">Адрес</string>
+    <string name="avatar">Аватар</string>
+    <string name="name_kaphedra">Название кафедры</string>
+    <string name="name_institute">Название института</string>
+    <string name="name_student">Ф.И.О. студента</string>
+    <string name="name_subject">Название предмета</string>
+    <string name="grade">Оценка</string>
+
+</resources>
